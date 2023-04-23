@@ -26,7 +26,7 @@ function register(event) {
                         userConfirmPassword : confirmpassword
                     }
                     Ls.push(userdata)
-                    localStorage.setItem(("users"),JSON.stringify(Ls))
+                    localStorage.setItem("Users",JSON.stringify(Ls))
                     alert("Registration successfull")
                     window.location.href='./login.html'
                     document.getElementById("username").value =  " "
@@ -71,6 +71,7 @@ function login(event){
     }
     if(!!flag){
 
+        window.location.href="./index.html"
         alert("login successfull")
     }
     else("credintials not matched")
